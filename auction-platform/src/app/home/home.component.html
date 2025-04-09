@@ -1,0 +1,8 @@
+
+<div class="slider-section">
+    <ngb-carousel *ngIf="images && images.length > 0" [interval]="3000" [pauseOnHover]="true" [wrap]="true">
+        <ng-template ngbSlide *ngFor="let img of images">
+            <img [src]="img" alt="Slider-Image" class="slider-img"/>
+        </ng-template>
+    </ngb-carousel>
+</div>
