@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AuctionListComponent } from './auction-list/auction-list.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
 @Component({
   selector: 'app-root',
-  imports: [AuctionListComponent],
+  imports: [AuctionListComponent, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

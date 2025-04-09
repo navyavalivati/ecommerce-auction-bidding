@@ -1,4 +1,4 @@
-<div class="auction-list-container" style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); padding: 20px;">
+<div class="auction-list-container" style="background: linear-gradient(#c7a8d7, #9198e5); display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); padding: 20px;">
     <mat-card *ngFor="let auction of auctions" class="auction-card">
         <img mat-card-image [src]="auction.imageUrl" alt="{{auction.title}}"/>
         <mat-card-header>

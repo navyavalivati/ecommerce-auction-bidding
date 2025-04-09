@@ -11,21 +11,56 @@ export class AuctionService {
       title: 'Vintage Camera',
       currentBid: 120,
       endTime: '2025-04-09T15:30:00Z',
-      imageUrl: 'https://via.placeholder.com/300?text=Camera'
+      imageUrl: '/assets/vintagecamera.png'
     },
     {
       id: '2',
       title: 'Used Gaming Laptop',
       currentBid: 200,
       endTime: '2025-04-10T15:30:00Z',
-      imageUrl: 'https://via.placeholder.com/300?text=Laptop'
+      imageUrl: '/assets/laptop.jpeg'
     },
     {
       id: '3',
       title: 'Used Ipad',
       currentBid: 200,
       endTime: '2025-04-10T15:30:00Z',
-      imageUrl: 'https://via.placeholder.com/300?text=Ipad'
+      imageUrl: '/assets/ipad.png'
+    },
+    {
+      id: '1',
+      title: 'Vintage Camera',
+      currentBid: 120,
+      endTime: '2025-04-09T15:30:00Z',
+      imageUrl: '/assets/vintagecamera.png'
+    },
+    {
+      id: '2',
+      title: 'Used Gaming Laptop',
+      currentBid: 200,
+      endTime: '2025-04-10T15:30:00Z',
+      imageUrl: '/assets/laptop.jpeg'
+    },
+    {
+      id: '3',
+      title: 'Used Ipad',
+      currentBid: 200,
+      endTime: '2025-04-10T15:30:00Z',
+      imageUrl: '/assets/ipad.png'
+    },
+    {
+      id: '2',
+      title: 'Used Gaming Laptop',
+      currentBid: 200,
+      endTime: '2025-04-10T15:30:00Z',
+      imageUrl: '/assets/laptop.jpeg'
+    },
+    {
+      id: '3',
+      title: 'Used Ipad',
+      currentBid: 200,
+      endTime: '2025-04-10T15:30:00Z',
+      imageUrl: '/assets/ipad.png'
     }
   ];
 

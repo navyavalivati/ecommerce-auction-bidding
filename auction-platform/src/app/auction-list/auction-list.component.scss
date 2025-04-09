@@ -1,5 +1,7 @@
+
 .auction-list-container {
     padding: 16px;
+    
 }
   
 .auction-card {
@@ -9,4 +11,8 @@
 .auction-card:hover {
     transform: scale(1.02);
 }
-  
+
+img {
+    height: 100px;
+    width: 100px;
+}
