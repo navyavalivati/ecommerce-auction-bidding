@@ -6,3 +6,19 @@
         </ng-template>
     </ngb-carousel>
 </div>
+
+<div class="auction-list-container" style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); padding: 20px;">
+    <mat-card *ngFor="let auction of auctions" class="auction-card">
+        <img mat-card-image [src]="auction.imageUrl" alt="{{auction.title}}"/>
+        <mat-card-header>
+            <mat-card-title>{{ auction.title }}</mat-card-title>
+            <mat-card-subtitle>Current bid: ${{ auction.currentBid }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <app-timer [endTime]="auction.endTime"></app-timer>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" [routerLink]="['/auction', auction.id]">Bid Now</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
