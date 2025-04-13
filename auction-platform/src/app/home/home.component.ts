@@ -27,6 +27,15 @@ export class HomeComponent {
 
   auctions : Auction[] = [];
 
+
+  categories = [
+    {name: 'Electronics', icon: 'icon1'},
+    {name: 'Gaming', icon: 'icon2'},
+    {name: 'Furniture', icon: 'icon3'},
+    {name: 'Fashion', icon: 'icon4'},
+    {name: 'Books', icon: 'icon5'},
+    {name:'Art & Decor', icon: 'icon6'}
+  ]
   constructor(private auctionService: AuctionService) {}
 
   ngOnInit(): void {
@@ -35,3 +44,4 @@ export class HomeComponent {
     });
   }
 }
+

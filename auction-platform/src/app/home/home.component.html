@@ -7,6 +7,22 @@
     </ngb-carousel>
 </div>
 
+<section class="categories-section">
+    <h2 class="section-title">Browse By Category</h2>
+    <div class="category-grid">
+        <div class="category-card" *ngFor="let category of categories">
+            <div class="emoji">{{ category.icon }}</div>
+            <div class="label"> {{ category.name }}</div>
+        </div>
+    </div>
+
+    <div class="post-button-container">
+        <button mat-raised-button color="accent" class="post-auction-btn">
+            Post an Auction
+        </button>
+    </div>
+</section>
+
 <div class="auction-list-container" style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); padding: 20px;">
     <mat-card *ngFor="let auction of auctions" class="auction-card">
         <img mat-card-image [src]="auction.imageUrl" alt="{{auction.title}}"/>

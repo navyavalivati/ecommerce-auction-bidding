@@ -5,7 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
-  imports: [AuctionListComponent, NavbarComponent, RouterModule],
+  imports: [NavbarComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
