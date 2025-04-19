@@ -1,0 +1,48 @@
+:host {
+    display: block;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #110227, #3d0d67, #813da8, #794f81);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.form-box {
+    background-color: rgba(215, 196, 211, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 35px 30px 35px 30px;
+    max-width: 500px;
+    width: 90%;
+    height: 95%;
+    color: #fff;
+}
+  
+@keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+::ng-deep .mat-form-field {
+    width: 100%;
+    color: white;
+}
+    

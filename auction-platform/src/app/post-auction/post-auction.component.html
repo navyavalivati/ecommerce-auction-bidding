@@ -1,1 +1,44 @@
-<p>post-auction works!</p>
+<div class="container">
+    <div class="form-box">
+      <h2>Post an Auction</h2>
+  
+      <form [formGroup]="auctionForm" (ngSubmit)="onSubmit()" class="auction-form">
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Item Title</mat-label>
+          <input matInput formControlName="title" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Description</mat-label>
+          <textarea matInput formControlName="description"></textarea>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Starting Bid</mat-label>
+          <input matInput type="number" formControlName="startingBid" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Category</mat-label>
+          <mat-select formControlName="category">
+            <mat-option *ngFor="let cat of categories" [value]="cat">{{ cat }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Duration (minutes)</mat-label>
+          <input matInput type="number" formControlName="duration" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Image URL</mat-label>
+          <input matInput formControlName="imageUrl" />
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" type="submit">
+          Submit Auction
+        </button>
+      </form>
+    </div>
+  </div>
+  

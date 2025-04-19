@@ -21,6 +21,8 @@ import { MatSelectModule } from '@angular/material/select';
 export class PostAuctionComponent {
   auctionForm: FormGroup;
 
+  categories = ['Electronics', 'Gaming', 'Furniture', 'Fashion', 'Books', 'Art & Decor'];
+
   constructor(private fb: FormBuilder) {
     this.auctionForm = this.fb.group({
       title: ['', Validators.required],
