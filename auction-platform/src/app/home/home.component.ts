@@ -20,9 +20,9 @@ import { TimerComponent } from '../timer/timer.component';
 })
 export class HomeComponent {
   images : string[] = [
-    '/assets/ipad.png',
-    '/assets/ipad.png',
-    '/assets/ipad.png'
+    '/assets/vintagecamera.png',
+    '/assets/vintagecamera.png',
+    '/assets/vintagecamera.png'
   ];
 
   auctions : Auction[] = [];
